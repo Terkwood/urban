@@ -31,7 +31,10 @@ export async function define(term) {
     const response = await (await fetch(`${endpoint}/define?term=${encodeURIComponent(term)}`)).json()
     return response.list
 }
-
+/**
+ * Gets a definition by id
+ * @param {String} id 
+ */
 export async function defid(id) {
     const response = await (await fetch(`${endpoint}/define?defid=${id}`)).json()
     return response.list
