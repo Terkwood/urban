@@ -8,7 +8,7 @@ A Deno wrapper for the UrbanDictionary API
 
 ```js
 
-import { define, vote, defid, random } from './mod.js';
+import { define, vote, defid, random } from 'https://deno.land/x/urban/mod.js';
 
 console.log(await random());
 console.log(await define('jeff'));
